@@ -1,0 +1,13 @@
+include ./head.pug
+body 
+    include ./header.pug
+    main
+        section
+            h2 Requested info:
+            p Title: #{title}
+            p Director: #{Director}
+            p Year: #{Year}
+            img(src=Poster)
+            p Plot: #{plot}
+    include ./footer.pug
+        

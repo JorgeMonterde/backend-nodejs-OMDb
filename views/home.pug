@@ -1,0 +1,12 @@
+include ./head.pug
+body 
+    include ./header.pug
+    main
+        section
+            h2 Search film
+            p Fill the form below to get the film info:
+            form(id="search_form" action="http://localhost:3000/film/" method="post")
+                input(type="text", id="title" name="title", placeholder="Title")
+                input(type="submit", value="Send")
+    include ./footer.pug
+
